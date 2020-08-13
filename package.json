@@ -1,0 +1,25 @@
+{
+  "name": "simple-chat",
+  "version": "1.0.0",
+  "description": "Feathers.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brkyozdemir/simple-chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brkyozdemir/simple-chat/issues"
+  },
+  "homepage": "https://github.com/brkyozdemir/simple-chat#readme",
+  "dependencies": {
+    "@feathersjs/express": "^4.5.8",
+    "@feathersjs/feathers": "^4.5.8",
+    "@feathersjs/socketio": "^4.5.8"
+  }
+}
