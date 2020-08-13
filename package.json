@@ -1,25 +1,64 @@
 {
   "name": "simple-chat",
-  "version": "1.0.0",
   "description": "Feathers.js",
-  "main": "index.js",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "brkyozdemir",
+    "email": "berkayozdemir02@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^13.0.0",
+    "npm": ">= 3.0.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run lint && npm run mocha",
+    "lint": "standard",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/brkyozdemir/simple-chat.git"
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/brkyozdemir/simple-chat/issues"
-  },
-  "homepage": "https://github.com/brkyozdemir/simple-chat#readme",
   "dependencies": {
+    "@feathersjs/authentication": "^4.5.8",
+    "@feathersjs/authentication-local": "^4.5.8",
+    "@feathersjs/authentication-oauth": "^4.5.8",
+    "@feathersjs/configuration": "^4.5.8",
+    "@feathersjs/errors": "^4.5.8",
     "@feathersjs/express": "^4.5.8",
     "@feathersjs/feathers": "^4.5.8",
-    "@feathersjs/socketio": "^4.5.8"
+    "@feathersjs/socketio": "^4.5.8",
+    "@feathersjs/transport-commons": "^4.5.8",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "feathers-nedb": "^5.1.0",
+    "helmet": "^3.23.3",
+    "nedb": "^1.8.0",
+    "serve-favicon": "^2.5.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "mocha": "^8.1.1",
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
   }
 }
