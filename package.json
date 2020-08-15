@@ -27,7 +27,7 @@
     "test": "npm run lint && npm run mocha",
     "lint": "standard",
     "dev": "nodemon src/",
-    "start": "node src/",
+    "start": "node src/index.js",
     "mocha": "mocha test/ --recursive --exit"
   },
   "standard": {
